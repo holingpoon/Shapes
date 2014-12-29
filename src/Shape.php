@@ -44,18 +44,6 @@ class Shape
     }
 
     /**
-     * Returns string representation of a Shape
-     * @return string
-     */
-    public function __toString()
-    {
-        //echo "Using the toString method: ";
-        return strval($this->getArea());
-    }
-
-
-
-    /**
      * Returns shape's area.
      * @return int
      */

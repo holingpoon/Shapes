@@ -38,4 +38,10 @@ class TriangleTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(6, $this->triangle->getPerimeter());
     }
 
+    public function testTriangleDestructor()
+    {
+        $this->triangle = null;
+        $this->assertNull($this->triangle);
+    }
+
 }

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<crap_result>
+  <project/>
+  <timestamp>2014-12-29 23:15:49</timestamp>
+  <stats>
+    <name>Method Crap Stats</name>
+    <methodCount>8</methodCount>
+    <crapMethodCount>0</crapMethodCount>
+    <crapLoad>0</crapLoad>
+    <totalCrap>8</totalCrap>
+    <crapMethodPercent>0</crapMethodPercent>
+  </stats>
+  <methods>
+    <method>
+      <package/>
+      <className>Shape</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct()</methodSignature>
+      <fullMethod>__construct()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>Shape</className>
+      <methodName>__destruct</methodName>
+      <methodSignature>__destruct()</methodSignature>
+      <fullMethod>__destruct()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>Shape</className>
+      <methodName>getArea</methodName>
+      <methodSignature>getArea()</methodSignature>
+      <fullMethod>getArea()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>Shape</className>
+      <methodName>getPerimeter</methodName>
+      <methodSignature>getPerimeter()</methodSignature>
+      <fullMethod>getPerimeter()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>Triangle</className>
+      <methodName>__construct</methodName>
+      <methodSignature>__construct($base = 0.0, $height = 0.0)</methodSignature>
+      <fullMethod>__construct($base = 0.0, $height = 0.0)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>Triangle</className>
+      <methodName>__destruct</methodName>
+      <methodSignature>__destruct()</methodSignature>
+      <fullMethod>__destruct()</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>Triangle</className>
+      <methodName>setArea</methodName>
+      <methodSignature>setArea($base, $height)</methodSignature>
+      <fullMethod>setArea($base, $height)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+    <method>
+      <package/>
+      <className>Triangle</className>
+      <methodName>setPerimeter</methodName>
+      <methodSignature>setPerimeter($sideOne, $sideTwo, $sideThree)</methodSignature>
+      <fullMethod>setPerimeter($sideOne, $sideTwo, $sideThree)</fullMethod>
+      <crap>1</crap>
+      <complexity>1</complexity>
+      <coverage>100</coverage>
+      <crapLoad>0</crapLoad>
+    </method>
+  </methods>
+</crap_result>
