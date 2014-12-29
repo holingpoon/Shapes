@@ -15,20 +15,38 @@ namespace Shape;
  */
 class Shape
 {
+    /**
+     * Area of a Shape.
+     * @var float
+     */
     protected $area;
+    /**
+     * Perimeter of a Shape.
+     * @var float
+     */
     protected $perimeter;
     // public static $count = 0;
 
+    /**
+     * Creates a Shape
+     */
     protected function __construct()
     {
         //echo 'This class "', __CLASS__, '" was initiated!<br />';
     }
 
+    /**
+     * Destroys a Shape
+     */
     protected function __destruct()
     {
         //echo 'This class "', __CLASS__, '" was destroyed!<br />';
     }
 
+    /**
+     * Returns string representation of a Shape
+     * @return string
+     */
     public function __toString()
     {
         //echo "Using the toString method: ";
@@ -41,8 +59,17 @@ class Shape
      * Returns shape's area.
      * @return int
      */
-    protected function getArea()
+    public function getArea()
     {
         return $this->area;
+    }
+
+    /**
+     * Returns shape's perimeter
+     * @return mixed
+     */
+    public function getPerimeter()
+    {
+        return $this->perimeter;
     }
 }

@@ -23,13 +23,19 @@ class TriangleTest extends \PHPUnit_Framework_TestCase
 
     public function testGetArea()
     {
-        $this->assertEquals(50, $this->triangle->getArea());
+        $this->assertEquals(25, $this->triangle->getArea());
     }
 
     public function testSetArea()
     {
         $this->triangle->setArea(6,10);
-        $this->assertEquals(60, $this->triangle->getArea());
+        $this->assertEquals(30, $this->triangle->getArea());
+    }
+
+    public function testSetPerimeter()
+    {
+        $this->triangle->setPerimeter(1,2,3);
+        $this->assertEquals(6, $this->triangle->getPerimeter());
     }
 
 }

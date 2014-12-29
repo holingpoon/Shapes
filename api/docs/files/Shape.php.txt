@@ -15,80 +15,61 @@ namespace Shape;
  */
 class Shape
 {
-    public $area = 50;
-    public $perimeter;
-    public static $count = 0;
+    /**
+     * Area of a Shape.
+     * @var float
+     */
+    protected $area;
+    /**
+     * Perimeter of a Shape.
+     * @var float
+     */
+    protected $perimeter;
+    // public static $count = 0;
 
+    /**
+     * Creates a Shape
+     */
     protected function __construct()
     {
-        echo 'This class "', __CLASS__, '" was initiated!<br />';
+        //echo 'This class "', __CLASS__, '" was initiated!<br />';
     }
 
+    /**
+     * Destroys a Shape
+     */
     protected function __destruct()
     {
-        echo 'This class "', __CLASS__, '" was destroyed!<br />';
+        //echo 'This class "', __CLASS__, '" was destroyed!<br />';
     }
 
+    /**
+     * Returns string representation of a Shape
+     * @return string
+     */
     public function __toString()
     {
-        echo "Using the toString method: ";
+        //echo "Using the toString method: ";
         return strval($this->getArea());
     }
 
-    /**
-     * Tracks number of shapes instantiated.
-     * @return string
-     */
-    public static function plusOne()
-    {
-        return "The count is " . ++self::$count . "<br />";
-    }
 
-    /**
-     * Sets a shape's area.
-     * @param $area
-     */
-    public function setArea($area)
-    {
-        $this->area = $area;
-    }
 
     /**
      * Returns shape's area.
      * @return int
      */
-    protected function getArea()
+    public function getArea()
     {
         return $this->area;
     }
-}
-
-/**
- * Class Triangle
- * @package Shape
- */
-class Triangle extends Shape
-{
-    public function __construct()
-    {
-        parent::__construct();
-        echo "A new constructor in " . __CLASS__ . ".<br />";
-    }
-    public function newMethod()
-    {
-        echo "From a new method in " . __CLASS__ . ".<br/>";
-    }
 
     /**
-     * Expose triangle's area.
-     * @return int
+     * Returns shape's perimeter
+     * @return mixed
      */
-    public function showArea()
+    public function getPerimeter()
     {
-        return $this->getArea();
+        return $this->perimeter;
     }
 }
-
-do {
-    echo Shape::plusOne();
-} while (Shape::$count < 10);
