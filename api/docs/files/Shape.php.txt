@@ -1,0 +1,94 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: holingpoon
+ * Date: 12/24/14
+ * Time: 2:37 PM
+ */
+
+namespace Shape;
+
+/**
+ * Class Shape: Base class for all shapes.
+ * @package Shape
+ * @author Ho-Ling Poon
+ */
+class Shape
+{
+    public $area = 50;
+    public $perimeter;
+    public static $count = 0;
+
+    protected function __construct()
+    {
+        echo 'This class "', __CLASS__, '" was initiated!<br />';
+    }
+
+    protected function __destruct()
+    {
+        echo 'This class "', __CLASS__, '" was destroyed!<br />';
+    }
+
+    public function __toString()
+    {
+        echo "Using the toString method: ";
+        return strval($this->getArea());
+    }
+
+    /**
+     * Tracks number of shapes instantiated.
+     * @return string
+     */
+    public static function plusOne()
+    {
+        return "The count is " . ++self::$count . "<br />";
+    }
+
+    /**
+     * Sets a shape's area.
+     * @param $area
+     */
+    public function setArea($area)
+    {
+        $this->area = $area;
+    }
+
+    /**
+     * Returns shape's area.
+     * @return int
+     */
+    protected function getArea()
+    {
+        return $this->area;
+    }
+}
+
+/**
+ * Class Triangle
+ * @package Shape
+ */
+class Triangle extends Shape
+{
+    public function __construct()
+    {
+        parent::__construct();
+        echo "A new constructor in " . __CLASS__ . ".<br />";
+    }
+    public function newMethod()
+    {
+        echo "From a new method in " . __CLASS__ . ".<br/>";
+    }
+
+    /**
+     * Expose triangle's area.
+     * @return int
+     */
+    public function showArea()
+    {
+        return $this->getArea();
+    }
+}
+
+do {
+    echo Shape::plusOne();
+} while (Shape::$count < 10);
