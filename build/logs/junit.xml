@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" tests="5" assertions="5" failures="0" errors="0" time="0.030322">
-    <testcase name="testNewTriangle" class="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" line="19" assertions="1" time="0.004906"/>
-    <testcase name="testGetArea" class="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" line="24" assertions="1" time="0.014561"/>
-    <testcase name="testSetArea" class="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" line="29" assertions="1" time="0.004537"/>
-    <testcase name="testSetPerimeter" class="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" line="35" assertions="1" time="0.004071"/>
-    <testcase name="testTriangleDestructor" class="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" line="41" assertions="1" time="0.002247"/>
+  <testsuite name="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" tests="5" assertions="5" failures="0" errors="0" time="0.405458">
+    <testcase name="testNewTriangle" class="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" line="24" assertions="1" time="0.065902"/>
+    <testcase name="testGetArea" class="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" line="29" assertions="1" time="0.302311"/>
+    <testcase name="testSetArea" class="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" line="38" assertions="1" time="0.005227"/>
+    <testcase name="testSetPerimeter" class="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" line="44" assertions="1" time="0.006274"/>
+    <testcase name="testTriangleDestructor" class="Shape\TriangleTest" file="/Users/holingpoon/devl/php/Shapes/tests/TriangleTest.php" line="50" assertions="1" time="0.025744"/>
   </testsuite>
 </testsuites>
