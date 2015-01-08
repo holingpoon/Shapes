@@ -16,6 +16,11 @@ class TriangleTest extends \PHPUnit_Framework_TestCase
         $this->triangle = new Triangle(5,10);
     }
 
+    public function tearDown()
+    {
+        \Mockery::close();
+    }
+
     public function testNewTriangle()
     {
         $this->assertInstanceOf('Shape\Triangle', $this->triangle);
@@ -23,7 +28,11 @@ class TriangleTest extends \PHPUnit_Framework_TestCase
 
     public function testGetArea()
     {
-        $this->assertEquals(25, $this->triangle->getArea());
+        //$this->assertEquals(25, $this->triangle->getArea());
+        $mock_triangle = \Mockery::mock('Triangle');
+        $mock_triangle->shouldReceive('getArea')->andReturn(0);
+        $this->assertEquals(0, $mock_triangle->getArea());
+
     }
 
     public function testSetArea()
