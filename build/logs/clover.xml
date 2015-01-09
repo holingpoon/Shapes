@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <coverage generated="1420225518">
   <project timestamp="1420225518">
     <file name="/Applications/MAMP/bin/php/php5.6.2/bin/phpunit">
@@ -583,6 +584,7 @@
       <line num="601" type="stmt" count="1"/>
       <metrics loc="77424" ncloc="77424" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="579" coveredstatements="5" elements="579" coveredelements="5"/>
     </file>
+
     <package name="Shape">
       <file name="/Users/holingpoon/devl/php/Shapes/src/Shape.php">
         <class name="Shape" namespace="Shape" fullPackage="Shape" package="Shape">
