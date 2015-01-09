@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1419891349">
-  <project timestamp="1419891349">
-    <file name="/Applications/MAMP/bin/php/php5.6.2/bin/phpunit">
+<coverage generated="1419912327">
+  <project timestamp="1419912327">
+    <package name="Shape">
+      <file name="C:/Users/Ho-Ling/PhpstormProjects/Shapes/src/Shape.php">
+        <class name="Shape" namespace="Shape" fullPackage="Shape" package="Shape">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="8" coveredelements="8"/>
+        </class>
+        <line num="33" type="method" name="__construct" crap="1" count="5"/>
+        <line num="36" type="stmt" count="5"/>
+        <line num="41" type="method" name="__destruct" crap="1" count="1"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="50" type="method" name="getArea" crap="1" count="2"/>
+        <line num="52" type="stmt" count="2"/>
+        <line num="59" type="method" name="getPerimeter" crap="1" count="1"/>
+        <line num="61" type="stmt" count="1"/>
+        <metrics loc="62" ncloc="23" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="8" coveredelements="8"/>
+      </file>
+      <file name="C:/Users/Ho-Ling/PhpstormProjects/Shapes/src/Triangle.php">
+        <class name="Triangle" namespace="Shape" fullPackage="Shape" package="Shape">
+          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
+        </class>
+        <line num="33" type="method" name="__construct" crap="1" count="5"/>
+        <line num="35" type="stmt" count="5"/>
+        <line num="36" type="stmt" count="5"/>
+        <line num="37" type="stmt" count="5"/>
+        <line num="38" type="stmt" count="5"/>
+        <line num="40" type="stmt" count="5"/>
+        <line num="45" type="method" name="__destruct" crap="1" count="1"/>
+        <line num="49" type="stmt" count="1"/>
+        <line num="50" type="stmt" count="1"/>
+        <line num="58" type="method" name="setArea" crap="1" count="5"/>
+        <line num="60" type="stmt" count="5"/>
+        <line num="61" type="stmt" count="5"/>
+        <line num="70" type="method" name="setPerimeter" crap="1" count="1"/>
+        <line num="72" type="stmt" count="1"/>
+        <line num="73" type="stmt" count="1"/>
+        <line num="79" type="stmt" count="1"/>
+        <metrics loc="78" ncloc="32" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
+      </file>
+    </package>
+    <file name="C:/bin/phpunit.phar">
       <line num="18" type="stmt" count="0"/>
       <line num="20" type="stmt" count="0"/>
       <line num="22" type="stmt" count="0"/>
@@ -583,44 +621,6 @@
       <line num="601" type="stmt" count="0"/>
       <metrics loc="77424" ncloc="77424" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="579" coveredstatements="0" elements="579" coveredelements="0"/>
     </file>
-    <package name="Shape">
-      <file name="/Users/holingpoon/devl/php/Shapes/src/Shape.php">
-        <class name="Shape" namespace="Shape" fullPackage="Shape" package="Shape">
-          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="8" coveredelements="8"/>
-        </class>
-        <line num="33" type="method" name="__construct" crap="1" count="5"/>
-        <line num="36" type="stmt" count="5"/>
-        <line num="41" type="method" name="__destruct" crap="1" count="1"/>
-        <line num="44" type="stmt" count="1"/>
-        <line num="50" type="method" name="getArea" crap="1" count="2"/>
-        <line num="52" type="stmt" count="2"/>
-        <line num="59" type="method" name="getPerimeter" crap="1" count="1"/>
-        <line num="61" type="stmt" count="1"/>
-        <metrics loc="62" ncloc="23" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="8" coveredelements="8"/>
-      </file>
-      <file name="/Users/holingpoon/devl/php/Shapes/src/Triangle.php">
-        <class name="Triangle" namespace="Shape" fullPackage="Shape" package="Shape">
-          <metrics methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
-        </class>
-        <line num="33" type="method" name="__construct" crap="1" count="5"/>
-        <line num="35" type="stmt" count="5"/>
-        <line num="36" type="stmt" count="5"/>
-        <line num="37" type="stmt" count="5"/>
-        <line num="38" type="stmt" count="5"/>
-        <line num="40" type="stmt" count="5"/>
-        <line num="45" type="method" name="__destruct" crap="1" count="1"/>
-        <line num="49" type="stmt" count="1"/>
-        <line num="50" type="stmt" count="1"/>
-        <line num="58" type="method" name="setArea" crap="1" count="5"/>
-        <line num="60" type="stmt" count="5"/>
-        <line num="61" type="stmt" count="5"/>
-        <line num="70" type="method" name="setPerimeter" crap="1" count="1"/>
-        <line num="72" type="stmt" count="1"/>
-        <line num="73" type="stmt" count="1"/>
-        <line num="79" type="stmt" count="1"/>
-        <metrics loc="78" ncloc="32" classes="1" methods="4" coveredmethods="4" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="15" coveredelements="15"/>
-      </file>
-    </package>
     <metrics files="3" loc="77564" ncloc="77479" classes="2" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="594" coveredstatements="15" elements="602" coveredelements="23"/>
   </project>
 </coverage>
