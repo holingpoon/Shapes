@@ -1,2 +1,3 @@
 build/coverage/*
 .idea/*
+atlassian-ide-plugin.xml
