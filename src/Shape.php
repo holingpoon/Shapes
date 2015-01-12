@@ -13,7 +13,7 @@ namespace Shape;
  * @package Shape
  * @author Ho-Ling Poon
  */
-class Shape
+abstract class Shape
 {
     /**
      * Area of a Shape.
