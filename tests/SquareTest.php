@@ -22,8 +22,28 @@ class SquareTest extends \PHPUnit_Framework_TestCase {
     /**
      * @expectedException \UnexpectedValueException
      */
-    public function testWidthOrHeightShouldNotBeNegative()
+    public function testWidthShouldNotBeNegative()
     {
-        $square = new Square(-1,-1);
+        $this->square = new Square(-1, 1);
+    }
+
+    /**
+     * @expectedException \UnexpectedValueException
+     */
+    public function testHeightShouldNotBeNegative()
+    {
+      $this->square = new Square(1, -1);
+    }
+
+    public function testSquareDestructor()
+    {
+      $this->square = null;
+      $this->assertNull($this->square);
+    }
+
+    public function testSetPerimeter() {
+      $this->square->setPerimeter();
+      $perimeter = 2 * $this->square->getWidth() + 2 * $this->square->getHeight();
+      $this->assertSame($perimeter, $this->square->getPerimeter());
     }
 }

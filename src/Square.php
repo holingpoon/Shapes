@@ -30,7 +30,23 @@ class Square extends Shape {
         parent::__destruct();
     }
 
-    public function setPerimeter() {
-        $this->perimeter = 2 * $width + 2 * $height;
+    public function getWidth()
+    {
+      return $this->width;
+    }
+
+    public function getHeight()
+    {
+      return $this->height;
+    }
+
+    public function setPerimeter()
+    {
+        $this->perimeter = 2 * $this->width + 2 * $this->height;
+    }
+
+    public function getPerimeter()
+    {
+      return $this->perimeter;
     }
 }

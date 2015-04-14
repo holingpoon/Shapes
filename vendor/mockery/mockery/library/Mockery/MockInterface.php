@@ -35,10 +35,18 @@ interface MockInterface
     /**
      * Set expected method calls
      *
-     * @param mixed
+     * @param mixed ...
      * @return \Mockery\Expectation
      */
     public function shouldReceive();
+
+    /**
+     * Shortcut method for setting an expectation that a method should not be called.
+     *
+     * @param mixed ...
+     * @return \Mockery\Expectation
+     */
+    public function shouldNotReceive();
 
     /**
      * Allows additional methods to be mocked that do not explicitly exist on mocked class
@@ -59,11 +67,18 @@ interface MockInterface
     public function shouldAllowMockingProtectedMethods();
 
     /**
-     * Set mock to defer unexpected methods to it's parent if possible
+     * Set mock to defer unexpected methods to its parent if possible
      *
      * @return Mock
      */
     public function shouldDeferMissing();
+    
+    /**
+     * Set mock to defer unexpected methods to its parent if possible
+     *
+     * @return Mock
+     */
+    public function makePartial();
 
     /**
      * @param $method
