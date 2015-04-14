@@ -41,7 +41,8 @@ class SquareTest extends \PHPUnit_Framework_TestCase {
       $this->assertNull($this->square);
     }
 
-    public function testSetPerimeter() {
+    public function testSetPerimeter()
+    {
       $this->square->setPerimeter();
       $perimeter = 2 * $this->square->getWidth() + 2 * $this->square->getHeight();
       $this->assertSame($perimeter, $this->square->getPerimeter());
