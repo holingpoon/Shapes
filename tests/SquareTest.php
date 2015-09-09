@@ -1,13 +1,8 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: holingpoon
- * Date: 1/12/15
- * Time: 4:52 PM
- */
 
 namespace Shape;
 
+use \Mockery;
 
 class SquareTest extends \PHPUnit_Framework_TestCase {
 
@@ -46,5 +41,11 @@ class SquareTest extends \PHPUnit_Framework_TestCase {
       $this->square->setPerimeter();
       $perimeter = 2 * $this->square->getWidth() + 2 * $this->square->getHeight();
       $this->assertSame($perimeter, $this->square->getPerimeter());
+    }
+
+    public function testMock()
+    {
+      $mock = Mockery::mock('Square');
+      $mock->shouldReceive('getHeight')->andReturn(0)->mock();
     }
 }

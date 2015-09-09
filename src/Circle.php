@@ -5,14 +5,23 @@ namespace Shape;
 
 class Circle extends Shape
 {
-  protected $circumference;
-
   protected $radius;
 
-  public function __construct()
+  public function __construct($radius = 0)
   {
-    $this->circumference = $this->perimeter;
+    if ($radius < 0) {
+
+    }
+    $this->perimeter = 2 * pi() * $radius;
   }
 
+  public function __destruct()
+  {
+
+  }
+
+  public function getCircumference() {
+    return $this->perimeter;
+  }
 
 }
