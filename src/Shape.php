@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: holingpoon
- * Date: 12/24/14
- * Time: 2:37 PM
- */
 
 namespace Shape;
 
@@ -32,7 +26,7 @@ abstract class Shape
      */
     protected function __construct()
     {
-        //echo 'This class "', __CLASS__, '" was initiated!<br />';
+        echo 'This class "', __CLASS__, '" was initiated!<br />';
     }
 
     /**
@@ -40,7 +34,7 @@ abstract class Shape
      */
     protected function __destruct()
     {
-        //echo 'This class "', __CLASS__, '" was destroyed!<br />';
+        echo 'This class "', __CLASS__, '" was destroyed!<br />';
     }
 
     /**

@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: holingpoon
- * Date: 12/27/14
- * Time: 5:05 PM
- */
+
 namespace Shape;
 
 /**
